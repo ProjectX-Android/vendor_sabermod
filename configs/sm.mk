@@ -519,6 +519,7 @@ ifeq ($(strip $(ENABLE_SABERMOD_ARM_MODE)),true)
     libscrypt_static \
     libRSCpuRef \
     libRSDriver \
+    libpng \
     $(LOCAL_BLUETOOTH_BLUEDROID)
 
   LOCAL_ARM64_COMPILERS_WHITELIST_BASE := \

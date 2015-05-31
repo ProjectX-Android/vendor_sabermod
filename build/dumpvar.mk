@@ -12,13 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(info =====================================================================)
-ifdef TARGET_DEVICE
-$(info   TARGET_DEVICE=$(TARGET_DEVICE))
-endif
-ifdef TARGET_BASE_ROM
-$(info   TARGET_BASE_ROM=$(TARGET_BASE_ROM))
-endif
 ifdef SM_AND_NAME
 $(info   TARGET_SABERMOD_ANDROID_GCC_VERSION=$(SM_AND_NAME))
 endif
@@ -28,4 +21,3 @@ endif
 ifdef GCC_OPTIMIZATION_LEVELS
 $(info   OPTIMIZATION_OPTIONS=$(GCC_OPTIMIZATION_LEVELS))
 endif
-$(info =====================================================================)

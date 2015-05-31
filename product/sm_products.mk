@@ -30,13 +30,17 @@ ifneq ($(filter %shamu,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := shamu
 endif
 
+ifneq ($(filter %m8,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := m8
+endif
+
 # Filter ROM base
 ifneq ($(filter aosp% boostpop% pa% twisted% benzo%,$(TARGET_PRODUCT)),)
   TARGET_BASE_ROM := aosp
   include $(SM_VENDOR)/product/aosp_product.mk
 endif
 
-ifneq ($(filter slim% aicp% cm%,$(TARGET_PRODUCT)),)
+ifneq ($(filter slim% aicp% cm% px%,$(TARGET_PRODUCT)),)
   TARGET_BASE_ROM := cm
   include $(SM_VENDOR)/product/cm_product.mk
 endif
