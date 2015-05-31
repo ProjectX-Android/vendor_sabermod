@@ -19,6 +19,8 @@
 
 # Inherit sabermod configs.  Default to arm if LOCAL_ARCH is not defined.
 
+include $(SM_VENDOR)/configs/px.mk
+
 ifdef TARGET_SM_AND
 export TARGET_SM_AND := $(TARGET_SM_AND)
 else

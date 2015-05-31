@@ -1,0 +1,5 @@
+ LOCAL_ARM_COMPILERS_WHITELIST := \
+	 libpng
+
+ LOCAL_DISABLE_GRAPHITE := \
+	libFraunhoferAAC
