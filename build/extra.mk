@@ -73,14 +73,14 @@ ifneq ($(filter arm arm64,$(TARGET_ARCH)),)
       endif
       ifneq (1,$(words $(filter libwebviewchromium libc_netbsd,$(LOCAL_MODULE))))
         ifdef LOCAL_CFLAGS
-          LOCAL_CFLAGS += -lgomp -ldl -lgcc -fopenmp
+          LOCAL_CFLAGS += -lgomp -lgcc -fopenmp
         else
-          LOCAL_CFLAGS := -lgomp -ldl -lgcc -fopenmp
+          LOCAL_CFLAGS := -lgomp -lgcc -fopenmp
         endif
         ifdef LOCAL_LDLIBS
-          LOCAL_LDLIBS += -lgomp -ldl -lgcc
+          LOCAL_LDLIBS += -lgomp -lgcc
         else
-          LOCAL_LDLIBS := -lgomp -ldl -lgcc
+          LOCAL_LDLIBS := -lgomp -lgcc
         endif
       endif
     endif

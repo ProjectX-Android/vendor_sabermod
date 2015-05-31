@@ -26,13 +26,18 @@ ifneq ($(filter %mako,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := mako
 endif
 
+ifneq ($(filter %m8,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := m8
+endif
+
+
 # Filter ROM base
 ifneq ($(filter aosp% boostpop% pa%,$(TARGET_PRODUCT)),)
   TARGET_BASE_ROM := aosp
   include $(SM_VENDOR)/product/aosp_product.mk
 endif
 
-ifneq ($(filter slim% aicp% cm%,$(TARGET_PRODUCT)),)
+ifneq ($(filter slim% aicp% cm% px%,$(TARGET_PRODUCT)),)
   TARGET_BASE_ROM := cm
   include $(SM_VENDOR)/product/cm_product.mk
 endif
@@ -41,4 +46,4 @@ endif
 
 # -O3 disabled by default.  To enable it change here to := true,
 # or enable in vendor/sm/device/sm_device.mk
-export LOCAL_O3 := false
+export LOCAL_O3 := true
