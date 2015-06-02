@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_6f5f19e6",
+        "filename": "build/extra.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-02T19:57:45Z",
+      "side": 1,
+      "message": "remove that change, itś done on upstream",
+      "range": {
+        "startLine": 66,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 5
+      },
+      "revId": "3ae1eaf05e55868e7580ec459dad749eb7051826",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "facab960_8f629dab",
+        "filename": "configs/px.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-02T19:57:45Z",
+      "side": 1,
+      "message": "move",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 17
+      },
+      "revId": "3ae1eaf05e55868e7580ec459dad749eb7051826",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "facab960_cf5ca5f0",
+        "filename": "device/sm_m8.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-02T19:57:45Z",
+      "side": 1,
+      "message": "IS_SaberMOD_TOOLCHAINS check\n-sm",
+      "revId": "3ae1eaf05e55868e7580ec459dad749eb7051826",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "facab960_af592100",
+        "filename": "device/sm_m8.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-02T19:57:45Z",
+      "side": 1,
+      "message": "put O3 here",
+      "revId": "3ae1eaf05e55868e7580ec459dad749eb7051826",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "facab960_ef72497b",
+        "filename": "product/sm_products.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-02T19:57:45Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 49,
+        "startChar": 14,
+        "endLine": 49,
+        "endChar": 23
+      },
+      "revId": "3ae1eaf05e55868e7580ec459dad749eb7051826",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
