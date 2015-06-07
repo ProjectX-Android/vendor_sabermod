@@ -11,6 +11,15 @@ ifneq ($(filter %m8,$(TARGET_PRODUCT)),)
   KERNEL_DEFCONFIG := cm_m8_defconfig
 endif
 
+ifneq ($(filter %bacon,$(TARGET_PRODUCT)),)
+  KERNEL_DIR := kernel/oneplus/msm8974
+  KERNEL_BINARY_IMAGE := zImage-dtb
+  ifneq ($(filter px%,$(TARGET_PRODUCT)),)
+    KERNEL_DEFCONFIG := cyanogenmod_bacon_defconfig
+  endif
+endif
+
+
 ifdef KERNEL_DIR
   include $(KERNEL_DIR)/AndroidKernel_sm.mk
 endif
