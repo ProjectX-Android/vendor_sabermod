@@ -38,6 +38,11 @@ ifneq ($(filter m8,$(TARGET_DEVICE)),)
   LOCAL_ARCH := arm
 endif
 
+ifneq ($(filter bacon,$(TARGET_DEVICE)),)
+  include $(SM_VENDOR)/device/sm_bacon.mk
+  LOCAL_ARCH := arm
+endif
+
 # Kernel binary prefix.  The other part of this will go in the kernel sources Makefiles.
 ifeq ($(strip $(LOCAL_ARCH)),arm)
 export CROSS_COMPILE_NAME := arm-linux-gnueabi-
