@@ -34,6 +34,10 @@ ifneq ($(filter %m8,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := m8
 endif
 
+ifneq ($(filter %bacon,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := bacon
+endif
+
 # Filter ROM base
 ifneq ($(filter aosp% boostpop% pa% twisted% benzo%,$(TARGET_PRODUCT)),)
   TARGET_BASE_ROM := aosp
