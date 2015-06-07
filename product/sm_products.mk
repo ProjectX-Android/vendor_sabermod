@@ -18,6 +18,10 @@ ifneq ($(filter %m8,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := m8
 endif
 
+ifneq ($(filter %bacon,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := bacon
+endif
+
 # Filter ROM base
 include $(SM_VENDOR)/product/px_product.mk
 
