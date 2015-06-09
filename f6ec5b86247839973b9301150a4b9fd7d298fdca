@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_6bb9ade8",
+        "filename": "device/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-06-09T21:04:16Z",
+      "side": 1,
+      "message": "it´s cyanogenmod",
+      "range": {
+        "startLine": 44,
+        "startChar": 24,
+        "endLine": 44,
+        "endChar": 26
+      },
+      "revId": "f6ec5b86247839973b9301150a4b9fd7d298fdca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
