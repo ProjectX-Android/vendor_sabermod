@@ -23,7 +23,7 @@ ifneq ($(filter %sprout4,$(TARGET_PRODUCT)),)
   KERNEL_DIR := kernel/mediatek/sprout
   KERNEL_BINARY_IMAGE := zImage-dtb
   ifneq ($(filter px%,$(TARGET_PRODUCT)),)
-    KERNEL_DEFCONFIG := sprout_defconfig
+    KERNEL_DEFCONFIG := cyanogenmod_sprout_defconfig
   endif
 endif
 
