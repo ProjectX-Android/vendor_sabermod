@@ -34,6 +34,10 @@ ifneq ($(filter %titan,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := titan
 endif
 
+ifneq ($(filter %lettuce,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := lettuce
+endif
+
 # Filter ROM base
 include $(SM_VENDOR)/product/px_product.mk
 
