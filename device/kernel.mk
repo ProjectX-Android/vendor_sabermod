@@ -19,6 +19,38 @@ ifneq ($(filter %bacon,$(TARGET_PRODUCT)),)
   endif
 endif
 
+ifneq ($(filter %sprout4,$(TARGET_PRODUCT)),)
+  KERNEL_DIR := kernel/mediatek/sprout
+  KERNEL_BINARY_IMAGE := zImage-dtb
+  ifneq ($(filter px%,$(TARGET_PRODUCT)),)
+    KERNEL_DEFCONFIG := cyanogenmod_sprout_defconfig
+  endif
+endif
+
+ifneq ($(filter %sprout8,$(TARGET_PRODUCT)),)
+  KERNEL_DIR := kernel/mediatek/sprout
+  KERNEL_BINARY_IMAGE := zImage-dtb
+  ifneq ($(filter px%,$(TARGET_PRODUCT)),)
+    KERNEL_DEFCONFIG := cyanogenmod_sprout_defconfig
+  endif
+endif
+
+ifneq ($(filter %titan,$(TARGET_PRODUCT)),)
+  KERNEL_DIR := kernel/motorola/msm8226
+  KERNEL_BINARY_IMAGE := zImage-dtb
+  ifneq ($(filter px%,$(TARGET_PRODUCT)),)
+    KERNEL_DEFCONFIG := titan_defconfig
+  endif
+endif
+
+ifneq ($(filter %lettuce,$(TARGET_PRODUCT)),)
+  KERNEL_DIR := kernel/cyanogen/msm8916
+  KERNEL_BINARY_IMAGE := zImage-dtb
+  ifneq ($(filter px%,$(TARGET_PRODUCT)),)
+    KERNEL_DEFCONFIG := cyanogenmod_lettuce_defconfig
+  endif
+endif
+
 
 ifdef KERNEL_DIR
   include $(KERNEL_DIR)/AndroidKernel_sm.mk
