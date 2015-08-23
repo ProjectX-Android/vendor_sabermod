@@ -233,9 +233,7 @@ export TARGET_ARCH_LIB_PATH := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUIL
       endif
 
       # Modules that need to be compiled with gcc 4.8
-      GCC_4-8_MODULES := \
-        mdnsd \
-        $(LOCAL_BLUETOOTH_BLUEDROID)
+      GCC_4-8_MODULES := $(LOCAL_BLUETOOTH_BLUEDROID)
     endif
 
     ifeq ($(strip $(LOCAL_ARCH)),arm64)
@@ -642,7 +640,8 @@ ifeq ($(strip $(ENABLE_SABERMOD_ARM_MODE)),true)
     netd \
     libscrypt_static \
     libRSCpuRef \
-    libRSDriver
+    libRSDriver \
+    mdnsd
 
   LOCAL_ARM64_COMPILERS_WHITELIST_BASE := \
     libc++abi \
@@ -655,6 +654,7 @@ ifeq ($(strip $(ENABLE_SABERMOD_ARM_MODE)),true)
     netd \
     libRSDriver \
     libjpeg \
+    mdnsd \
     $(LOCAL_BLUETOOTH_BLUEDROID)
 
   # Check if there's already something set somewhere.
