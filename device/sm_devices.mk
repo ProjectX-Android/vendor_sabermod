@@ -13,45 +13,16 @@
 # limitations under the License.
 #
 
-<<<<<<< HEAD
 ifneq ($(filter m8,$(TARGET_DEVICE)),)
   include $(SM_VENDOR)/device/sm_m8.mk
-=======
-ifneq ($(filter flounder,$(TARGET_DEVICE)),)
-  include $(SM_VENDOR)/device/sm_flounder.mk
-  LOCAL_ARCH := arm64
-endif
-
-ifneq ($(filter hammerhead,$(TARGET_DEVICE)),)
-  include $(SM_VENDOR)/device/sm_hammerhead.mk
-  ENABLE_GCC_DEFAULTS := true
-  LOCAL_ARCH := arm
-endif
-
-ifneq ($(filter mako,$(TARGET_DEVICE)),)
-  include $(SM_VENDOR)/device/sm_mako.mk
-  ENABLE_GCC_DEFAULTS := true
-  LOCAL_ARCH := arm
-endif
-
-ifneq ($(filter shamu,$(TARGET_DEVICE)),)
-  include $(SM_VENDOR)/device/sm_shamu.mk
-  ENABLE_GCC_DEFAULTS := true
->>>>>>> 71a2f40... Let vendor/sm handle the gcc default flags (1/2)
   LOCAL_ARCH := arm
 endif
 
 ifneq ($(filter bacon,$(TARGET_DEVICE)),)
   include $(SM_VENDOR)/device/sm_bacon.mk
-  ENABLE_GCC_DEFAULTS := true
   LOCAL_ARCH := arm
 endif
 
-ifneq ($(filter baconcaf,$(TARGET_DEVICE)),)
-  include $(SM_VENDOR)/device/sm_bacon.mk
-  ENABLE_GCC_DEFAULTS := true
-  LOCAL_ARCH := arm
-endif
 
 # Kernel binary prefix.  The other part of this will go in the kernel source's AndroidKernel.mk.
 # And also in defconfigs (arch/arm/configs/name_defconfig)(or arm64) CONFIG_CROSS_COMPILE="arm-eabi-" (or "aarch64-")
