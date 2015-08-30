@@ -22,6 +22,14 @@ ifneq ($(filter %bacon,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := bacon
 endif
 
+ifneq ($(filter %sprout4,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := sprout4
+endif
+
+ifneq ($(filter %sprout8,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := sprout8
+endif
+
 # Filter ROM base
 include $(SM_VENDOR)/product/px_product.mk
 
